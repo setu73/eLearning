@@ -1,0 +1,75 @@
+.about-container {
+    display: flex;
+
+  }
+  
+  .flex-child {
+    flex: 1;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  
+  .one {
+    margin: 20px;
+    border-radius: 25px;
+    background:#FF6B6B;
+    padding: 20px; 
+  }
+  .two{
+    border-radius: 25px;
+    background: #68D391;
+    padding: 20px;
+    margin: 20px;
+  }
+  .heading{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  
+  .about-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .about-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-description {
+    margin-bottom: 10px;
+  }
+  
+  .about-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .about-contact-text {
+    margin-bottom: 10px;
+  }
+  
+  .about-email {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .mail-logo {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .mail-logo:hover {
+    color: #0056b3;
+  }
+  
