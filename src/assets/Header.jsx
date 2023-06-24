@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-      <Navbar.Brand as={Link} to="/" style={{ fontSize: '34px', marginLeft: '-60px',marginRight: '48px' }}>eSiksha</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/" style={{ fontSize: '34px', marginLeft: '-60px',marginRight: '48px' }}>eShiksha</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="mr-auto">
