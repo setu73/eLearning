@@ -17,7 +17,7 @@ const About = () => {
         <h2 className="about-title">Our Journey</h2>
         <div className="about-line"></div>
         <p className="about-description">
-          Welcome to our e-learning platform! We are dedicated to providing high-quality online courses and educational resources to help you enhance your knowledge and skills in various subjects.
+          Welcome to our e-learning platform!We only started this with a small team members and after years of our hardwork  We are dedicated to providing high-quality online courses and educational resources to help you and many others to enhance knowledge and skills in various subjects.
         </p>
         <div className="about-line"></div>
         <p className="about-description">
