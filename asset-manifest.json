@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eLearning/static/css/main.93d9d494.css",
+    "main.js": "/eLearning/static/js/main.05db3e1c.js",
+    "index.html": "/eLearning/index.html",
+    "main.93d9d494.css.map": "/eLearning/static/css/main.93d9d494.css.map",
+    "main.05db3e1c.js.map": "/eLearning/static/js/main.05db3e1c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93d9d494.css",
+    "static/js/main.05db3e1c.js"
+  ]
+}
