@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { GlobalContext } from '../context/GlobalContex';
+import { GlobalContext } from '../context/GlobalContex'
 import './Login.css';
 
 const Login = () => {

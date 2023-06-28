@@ -4,10 +4,10 @@ import { GlobalContext } from '../context/GlobalContex';
 import './Signup.css';
 
 const Signup = () => {
-  const { signup, clearError } = useContext(GlobalContext);
+  const { signup, error } = useContext(GlobalContext);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [signupError, setSignupError] = useState('');
+  const [signupStatus, setSignupStatus] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,18 +15,19 @@ const Signup = () => {
     const result = signup(email, password);
 
     if (result === 'existing') {
-      clearError();
-      setSignupError('Account already exists. Please choose a different email.');
+      setSignupStatus('Account already exists. Please login.');
+    } else if (result === 'success') {
+      setSignupStatus('Account created successfully. Please login.');
+      setEmail('');
+      setPassword('');
     }
-
-    setEmail('');
-    setPassword('');
   };
 
   return (
     <div className="signup-container">
-      <h2>Sign Up</h2>
-      {signupError && <p className="error">{signupError}</p>}
+      <h2>Signup</h2>
+      {signupStatus && <p className="signup-status">{signupStatus}</p>}
+      {error && <p className="error">{error}</p>} {/* Add this line */}
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="email">
           <Form.Label>Email:</Form.Label>
@@ -36,7 +37,7 @@ const Signup = () => {
           <Form.Label>Password:</Form.Label>
           <Form.Control type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </Form.Group>
-        <Button variant="primary" type="submit">Sign Up</Button>
+        <Button variant="primary" type="submit">Signup</Button>
       </Form>
     </div>
   );
